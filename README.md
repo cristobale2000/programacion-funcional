@@ -12,17 +12,21 @@ The course basically includes several notebooks on the following topics:
 * PF-3.1 The Hall-of-Fame of HOFs
 * PF-3.2 HOFs as a query language
 
+# Intro & Schedule
+
+[Intro.pdf](Intro.pdf) -- (Spanish, URJC specifics)
+
 # Launching notebooks
 
-To access these notebooks you need first to clone this repository in your local drive: 
+To access these notebooks you need first to install [git](https://git-scm.com/) and clone this repository in your local drive: 
 
-`> git clone https://github.com/jserranohidalgo/urjc-pd.git pd-21-22`
+`> git clone https://github.com/jserranohidalgo/urjc-pd.git pd`
 
 Then, run the program:
 
 `jupyter notebook` 
 
-in the root directory of the repository -- provided that you already installed
+in the root directory of the repository, if you already installed
 `jupyter` in your computer (see instructions below).
 
 Alternatively, you can skip the manual installation of `jupyter`
@@ -42,7 +46,7 @@ environment MyApps (just for URJC users).
 To install jupyter and run Scala notebooks, follow these steps:
 
 * Install the package manager [`conda`](https://docs.conda.io/en/latest/miniconda.html), or use `pip`, the python package manager.
-* Install [`jupyter`](https://jupyter.org/install) itself. 
+* Install [`jupyter`](https://jupyter.org/install) itself
 * Alternatively, you can also find jupyter notebooks for free when installing [anaconda](https://www.anaconda.com/products/individual-d).
 * Install the Scala plugin [`almond`](https://almond.sh/docs/quick-start-install)
 
@@ -65,5 +69,6 @@ Luckily, this will complete the installation of the almond kernel.
 Add the option `-M almond.ScalaKernel`  to the installation command, i.e.
 
         ./coursier launch --fork almond -M almond.ScalaKernel -- --install
+
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
